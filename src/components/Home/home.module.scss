@@ -1,0 +1,56 @@
+@import '../global.scss';
+.home{
+  font-weight: 300;
+}
+
+.title{
+  position: relative;
+  max-width: 433px;
+  max-height: 215px;
+  left: 154px;
+  top: 50px;
+  h1{
+    font-size: 82px;
+    line-height: 72px;
+    font-weight: 900;
+    letter-spacing: 0.025rem;
+  }
+}
+
+.cards{
+  border-top: 2px solid $auxiliaryBgClr;
+}
+
+.button{
+  margin-top: 54px;
+  background-color:transparent;
+  border: none;
+  color: $txtClr;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 38px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  width: 50px;
+  white-space: nowrap;
+  margin-left: 50px;
+  width: 100px;
+  position: relative;
+  z-index: 12;
+  span{
+    transition:all 1s ease;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    background-color: $auxiliaryBgClr;
+    width: 70%;
+    height: 100%;
+  }
+  &:hover>span{
+      width: 100%;
+  }
+}
+
+

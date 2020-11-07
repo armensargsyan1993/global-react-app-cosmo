@@ -1,0 +1,14 @@
+@import '~sass-burger/_burger.scss';
+
+.menu-button {
+	display: inline-block;
+	padding: .5em;
+}
+
+.burger-icon {
+	@include burger(25px, 3px, 5px, #fff);
+}
+
+.menu-button.is-active .burger-icon {
+	@include burger-to-cross;
+}

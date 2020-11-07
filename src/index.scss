@@ -1,0 +1,73 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import './components/global.scss';
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App{
+  background-color: $bgClr;
+  color: $txtClr;
+}
+
+
+
+
+.scrollbar-wrapper{
+  position: relative;
+  left: -85px;
+  width: 200px;
+  height: 600px;
+  // background-color: rgb(31, 34, 33);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  li{
+    // background-color: grey;
+  }
+  span{
+    display: block;
+    width: 20px;
+  }
+  span:nth-child(3){
+    transform: translateX(10px);
+  }
+
+  a{
+    display: flex;
+    color: white;
+    align-items: center;
+    text-decoration: none !important;
+  }
+  .o{
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    position: relative;
+    z-index: 2;
+  }
+  .line{
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: rgb(66, 46, 46);
+  }
+  a.active{
+    color: red;
+  }
+}
+
+.xxx{
+  border: 10px solid red;
+}

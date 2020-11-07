@@ -1,0 +1,29 @@
+@import '../global.scss';
+
+.work{
+
+}
+
+.title{
+    text-align: center;
+}
+
+.content{
+    margin-top: 100px;
+}
+
+.button{
+    color: $txtClr;
+    display: block;
+    margin: 0 auto;
+    background-color: $auxiliaryBgClr;
+    border: none;
+    position: relative;
+    top: -35px;
+}
+
+.CarouselProvider{
+    width: 1000px;
+    padding: 0 50px;
+    margin: 0 auto;
+}

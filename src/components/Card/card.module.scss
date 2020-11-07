@@ -1,0 +1,32 @@
+.card{
+    margin-top: 33px;
+    height: 130px;
+    overflow: hidden;
+    opacity: .3;
+    &:hover {
+        overflow-y: scroll;
+        opacity: 1;
+    }
+}
+
+.title{
+    font-size: 18.1px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.text{
+    font-size: 16.1px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.sliderCard{
+    height: auto;
+    overflow-y: visible !important;
+    text-align: center;
+    h2{
+        line-height: 20px;
+    }
+}
