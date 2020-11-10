@@ -1,4 +1,4 @@
-import { LOAD_CARDS, LOAD_PHOTOS } from './types';
+import { LOAD_CARDS, LOAD_PHOTOS, SHOW, HIDE } from './types';
 
 export const photoLoader = (payload:any) => {
     return {
@@ -12,4 +12,12 @@ export const cardsLoader = (payload:any) => {
         type:LOAD_CARDS,
         payload
     }
+}
+
+export const show = () => {
+    return {type:SHOW}
+}
+
+export const hide = () => {
+    return {type:HIDE}
 }

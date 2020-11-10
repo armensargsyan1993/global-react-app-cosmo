@@ -7,6 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 
@@ -49,6 +50,7 @@ code {
     color: white;
     align-items: center;
     text-decoration: none !important;
+    transition: all .5s ease;
   }
   .o{
     width: 5px;
@@ -64,10 +66,9 @@ code {
     background-color: rgb(66, 46, 46);
   }
   a.active{
-    color: red;
+    color: $auxiliaryBgClr;
+    span.o{
+      background-color: $auxiliaryBgClr;
+    }
   }
-}
-
-.xxx{
-  border: 10px solid red;
 }

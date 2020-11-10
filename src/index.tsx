@@ -9,9 +9,6 @@ import './index.scss';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 
-window.onscroll = () => {
-  return false
-}
 
 const store = createStore(rootReducer, composeWithDevTools(
   applyMiddleware(
