@@ -18,10 +18,29 @@
 }
 
 .iconCard{
+  transition: all 2s ease;
   border: 2px solid $auxiliaryBgClr;
   width: 200px;
   height: 100px;
   text-align: center;
+  h6,span{
+    transition: all 2s ease;
+  }
+  span{
+    opacity: 0;
+    display: block;
+  }
+  &:hover{
+    transform: rotateY(160deg);
+    cursor: pointer;
+    h6{
+      opacity: 0;
+    }
+    span{
+      opacity: 1;
+      transform: rotateY(160deg);
+    }
+  }
 }
 .iconCardWrapperClassName{
   display: flex;
@@ -33,7 +52,8 @@
   margin: 0 10px;
 }
 .iconCards{
-  width: 300px;
+    transition: all .5s ease;
+    width: 300px;
     display: flex;
     position: relative;
     left: 154px;
@@ -61,13 +81,12 @@
     z-index: -1;
     position: absolute;
     top: 0;
-    right: 0;
+    right: -25px;
     display: block;
-    background-color: $auxiliaryBgClr;
     width: 70%;
     height: 100%;
   }
   &:hover>span{
-      width: 100%;
+      right: -35px;
   }
 }

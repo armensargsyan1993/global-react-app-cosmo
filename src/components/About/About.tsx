@@ -29,7 +29,7 @@ export const About = () => {
                         <h2>
                             We believe in passionate people
                         </h2>
-                        <Button className={styles.button}>hire us &#8594;</Button>
+                        <Button className={styles.button}>hire us <span>&#8594;</span></Button>
                     </div>
                     <div className={`col-6 ${styles.cosmonaut}`}>
                         <img src={shadowWoman} alt="shadowWoman" />
