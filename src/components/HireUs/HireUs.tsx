@@ -8,9 +8,6 @@ type Inputs = {
   mail: string,
 };
 
-
-
-
 export const HireUs = () => {
     const names = ['App Design','Graphic Design','Motion Design','UX Design','Web Design','Marketing'];
     const { register, handleSubmit, watch, errors } = useForm<Inputs>();
@@ -23,9 +20,12 @@ export const HireUs = () => {
             <div className={styles.form}>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className={`row ${styles.row}`}>
-                        <CheckBox  col={4} register={register} name={names[0]}>{names[0]}</CheckBox>
+                        {new Array(3).fill('a').map((_,i) => {
+                            return <CheckBox key={i}  col={4} register={register} name={names[i]}>{names[i]}</CheckBox>
+                        })}
+                        {/* <CheckBox  col={4} register={register} name={names[0]}>{names[0]}</CheckBox>
                         <CheckBox  col={4} register={register} name={names[1]}>{names[1]}</CheckBox>
-                        <CheckBox  col={4} register={register} name={names[2]}>{names[2]}</CheckBox>
+                        <CheckBox  col={4} register={register} name={names[2]}>{names[2]}</CheckBox> */}
                     </div>
                     <div className={`row ${styles.row}`}>
                         <CheckBox col={6} register={register} name={names[3]}>{names[3]}</CheckBox>
