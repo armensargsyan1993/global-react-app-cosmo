@@ -24,6 +24,12 @@ body ::-webkit-scrollbar-thumb {
     -webkit-box-shadow: inset 0 0 6px $auxiliaryBgClr; 
 }
 
+.slick-slider{
+    button{
+        top: 32%;
+    }
+}
+
 .slick-track{
     display: flex;
     justify-content: center;
