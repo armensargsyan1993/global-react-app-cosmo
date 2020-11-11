@@ -47,7 +47,13 @@ const ScrollBar = ({callback}:any) => {
     },[block])
 
     const wheelHandler = (event:any) => {
+        const target = event.target
+        const clName = "disable__global__wheel"
         thereIs = false
+        if(target.parentNode.classList.contains(clName) || target.classList.contains(clName)){
+            wheelListener(wheelHandler)
+            return
+        }
         if(navLinks.length){
             event.deltaY < 0 ? setCurrentPage((prev) => {
                 let current = prev - 1

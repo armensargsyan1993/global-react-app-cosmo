@@ -6,6 +6,9 @@ $bgClr:  #0c0c0c;
 $txtClr:#ffffff;
 $auxiliaryBgClr:#0f33ff;
 
+*{
+    outline: none !important;
+}
 
 body ::-webkit-scrollbar {
     width: 12px;
