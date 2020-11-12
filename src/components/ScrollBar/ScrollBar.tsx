@@ -100,27 +100,27 @@ const ScrollBar = ({callback}:any) => {
         <div className="scrollbar-wrapper">
             <div className="line"></div>
             <li>
-                <NavLink to={'/home'} onClick={delayRedirect} activeClassName='active'>
+                <NavLink to={'home'} onClick={delayRedirect} activeClassName='active'>
                     <span>1</span><span className="o"></span><span>home</span>
                 </NavLink>
             </li>
             <li>
-                <NavLink to={'/works'} onClick={delayRedirect} activeClassName='active'>
+                <NavLink to={'works'} onClick={delayRedirect} activeClassName='active'>
                     <span>2</span><span className="o"></span><span>works</span>
                 </NavLink>
             </li>
             <li>
-                <NavLink to={'/about'} onClick={delayRedirect} activeClassName='active'>
+                <NavLink to={'about'} onClick={delayRedirect} activeClassName='active'>
                     <span>3</span><span className="o"></span><span>about</span>
                 </NavLink>
             </li>
             <li>
-                <NavLink to={'/contact'} onClick={delayRedirect} activeClassName='active'>
+                <NavLink to={'contact'} onClick={delayRedirect} activeClassName='active'>
                     <span>4</span><span className="o"></span><span>contact</span>
                 </NavLink>
             </li>
             <li>
-                <NavLink to={'/hireUs'} onClick={delayRedirect} activeClassName='active'>
+                <NavLink to={'hireUs'} onClick={delayRedirect} activeClassName='active'>
                     <span>5</span><span className="o"></span><span>hireUs</span>
                 </NavLink>
             </li>
