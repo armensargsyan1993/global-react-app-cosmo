@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/global-react-app-cosmo/static/css/main.000a23e6.chunk.css",
-    "main.js": "/global-react-app-cosmo/static/js/main.c5d554ea.chunk.js",
-    "main.js.map": "/global-react-app-cosmo/static/js/main.c5d554ea.chunk.js.map",
+    "main.js": "/global-react-app-cosmo/static/js/main.a02bdce5.chunk.js",
+    "main.js.map": "/global-react-app-cosmo/static/js/main.a02bdce5.chunk.js.map",
     "runtime-main.js": "/global-react-app-cosmo/static/js/runtime-main.776995e1.js",
     "runtime-main.js.map": "/global-react-app-cosmo/static/js/runtime-main.776995e1.js.map",
     "static/css/2.469b5525.chunk.css": "/global-react-app-cosmo/static/css/2.469b5525.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.469b5525.chunk.css",
     "static/js/2.83017444.chunk.js",
     "static/css/main.000a23e6.chunk.css",
-    "static/js/main.c5d554ea.chunk.js"
+    "static/js/main.a02bdce5.chunk.js"
   ]
 }
