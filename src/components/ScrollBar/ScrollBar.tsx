@@ -110,7 +110,7 @@ const ScrollBar = ({callback}:any) => {
                 </NavLink>
             </li>
             <li>
-                <NavLink to={'about'} onClick={delayRedirect} activeClassName='active'>
+                <NavLink to={'/about'} onClick={delayRedirect} activeClassName='active'>
                     <span>3</span><span className="o"></span><span>about</span>
                 </NavLink>
             </li>

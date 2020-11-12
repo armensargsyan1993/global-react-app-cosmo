@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Route, Switch } from "react-router-dom"
+import { Redirect, Route, Switch } from "react-router-dom"
 import { About } from "../About/About"
 import { Burger } from "../Burger/Burger"
 import { Contact } from "../Contact/Contact"
@@ -37,12 +37,14 @@ export const InsideWrapper = () => {
                     </aside>
                     <main className={`${styles.main} ${st ? styles.show :styles.hide}`}>
                         <Switch>
-                            <Route exact path='/' component={Home}/>
-                            <Route path='/Home' component={Home}/>
-                            <Route path='/Works' component={Works}/>
-                            <Route path='/About' component={About}/>
-                            <Route path='/Contact' component={Contact}/>
-                            <Route path='/HireUs' component={HireUs}/>
+                            <Route exact path="/">
+                                <Redirect to="/home" />
+                            </Route>
+                            <Route  path="/home" component={Home}/>
+                            <Route  path='/works' component={Works}/>
+                            <Route  path='/about' component={About}/>
+                            <Route  path='/contact' component={Contact}/>
+                            <Route  path='/hireUs' component={HireUs}/>
                         </Switch>
                     </main>
                     </div>
