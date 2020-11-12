@@ -19,9 +19,9 @@ const store = createStore(rootReducer, composeWithDevTools(
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store} >
-      <BrowserRouter basename={process.env.PUBLIC_URL + '#'}>
+      <HashRouter basename={process.env.PUBLIC_URL}>
         <App />
-      </BrowserRouter>
+      </HashRouter>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
