@@ -51,6 +51,7 @@ code {
     align-items: center;
     text-decoration: none !important;
     transition: all .5s ease;
+    font-weight: bold;
   }
   .o{
     width: 5px;
@@ -63,7 +64,7 @@ code {
     position: absolute;
     width: 5px;
     height: 100%;
-    background-color: rgb(66, 46, 46);
+    background-color: rgb(19, 18, 18);
   }
   a.active{
     color: $auxiliaryBgClr;

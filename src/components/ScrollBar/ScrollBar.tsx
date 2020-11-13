@@ -40,7 +40,6 @@ const ScrollBar = ({callback}:any) => {
             return;
           }
           if(block == 3){
-            // console.log(currentPage);
             navLinks[currentPage].click()
           }
           callback(show)
