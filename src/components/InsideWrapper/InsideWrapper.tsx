@@ -1,5 +1,7 @@
 import React, { useState } from "react"
+import { useDispatch, useSelector } from "react-redux"
 import { Redirect, Route, Switch } from "react-router-dom"
+import { RootState } from "../../redux/reducers/rootReducer"
 import { About } from "../About/About"
 import { Burger } from "../Burger/Burger"
 import { Contact } from "../Contact/Contact"
@@ -11,10 +13,11 @@ import { Works } from "../Works/Works"
 import styles from './insideWrapper.module.scss'
 
 
-export const InsideWrapper = () => {
-    let [st, setSt] = useState(true)
 
-    let callbackIsShow = (isShow:boolean = false) => {
+export const InsideWrapper:React.FC = () => {
+    let [st, setSt] = useState(true)
+    const show = useSelector((state:RootState) => state.app.show)
+    let callbackIsShow:CallbackIsSHow = (isShow = false) => {
         setSt(isShow)
     }
     return (
@@ -32,7 +35,7 @@ export const InsideWrapper = () => {
                 <div className="d-flex">
                     <aside className="aside">
                         <div className="nav">
-                            <ScrollBar callback={callbackIsShow}/>
+                            <ScrollBar propsShow={show} callback={callbackIsShow}/>
                         </div>
                     </aside>
                     <main className={`${styles.main} ${st ? styles.show :styles.hide}`}>
@@ -51,3 +54,6 @@ export const InsideWrapper = () => {
             </div>
     )
 }
+
+
+export type CallbackIsSHow = (isShow:boolean) => void

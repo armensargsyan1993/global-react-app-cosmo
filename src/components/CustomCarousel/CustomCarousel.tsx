@@ -1,10 +1,10 @@
 import * as React from 'react'
 import { useEffect} from "react";
 import Slider from "react-slick";
-import '../global.scss';
 import { useDispatch, useSelector } from "react-redux";
 import { photoLoader } from "../../redux/actions";
 import { Card } from '../Card/Card';
+
 
 export const CustomCarousel = () => {
     const settings = {
@@ -23,14 +23,14 @@ export const CustomCarousel = () => {
     useEffect(() => {
            fetch('https://jsonplaceholder.typicode.com/photos/?_limit=21')
            .then(response => response.json())
-           .then(data => dispatch(photoLoader(data))) 
+           .then(data => dispatch(photoLoader(data)))
         },[])
         const images = useSelector((s:any) => s.app.images)
         return (
             <div  style={st}>
                 <Slider {...settings}>
-
                     {images.map((elem:any) => {
+                        
                         return (
                             <div key={elem.id}>
                                 <img width='100px' src={elem.url} alt=""/>

@@ -6,7 +6,7 @@ import { Button } from "../Button/Button"
 import { useDispatch, useSelector } from "react-redux"
 import { cardsLoader } from "../../redux/actions"
 
-export const Home = () => {
+export const Home:React.FC = () => {
     const cards = useSelector((state:any) => state.home.cards)
     const dispatch = useDispatch()
     useEffect(() => {

@@ -1,10 +1,13 @@
+import { CardsPayload } from "../actions"
 import { LOAD_CARDS } from "../types"
 
 const initialState = {
-    cards:[]
+    cards:[] as Array<CardsPayload>
 }
 
-export const homeReducer = (state:any = initialState, action:any) => {
+type HomeInitialState = typeof initialState
+
+export const homeReducer = (state = initialState, action:any):HomeInitialState => {
     switch(action.type){
         case LOAD_CARDS:
             return {

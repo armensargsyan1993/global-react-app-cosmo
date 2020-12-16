@@ -1,16 +1,21 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import React, {useEffect, useLayoutEffect, useRef, useState } from "react";
 import { NavLink, useHistory } from 'react-router-dom'
+import { CallbackIsSHow } from "../InsideWrapper/InsideWrapper";
+import styles from './scrollbar.module.scss'
 
-let navLinks:any = []
-let thereIs = false
+let navLinks: NodeListOf<HTMLAnchorElement> | [] = []
+let thereIs:boolean = false
 
-let wheelListener = (func:any) =>{
+
+
+let wheelListener = (func:any):void =>{
     thereIs = true
     document.body.addEventListener('wheel',func,{once:true})
 }
 
 
-const ScrollBar = ({callback}:any) => {
+
+const ScrollBar:React.FC<Props> = ({callback,propsShow}) => {
     const [currentPage, setCurrentPage] = useState(0)
     const [show, setShow] = useState(true)
     const [block,setBlock] = useState(0)
@@ -20,12 +25,12 @@ const ScrollBar = ({callback}:any) => {
 
     useEffect(() => {
         navLinks = document.querySelectorAll('.scrollbar-wrapper a')
-        navLinks.forEach((elem:any,i:any) => {
-            elem.dataset.scrollBarNumber = i
+        navLinks.forEach((elem:HTMLAnchorElement,i:number) => {
+            elem.dataset.scrollBarNumber = `${i}`
         })
         setCurrentPage(():number => {
             let sum = 0
-            Array.from(navLinks).find((elem:any,i:any) => {
+            Array.from(navLinks).find((elem:HTMLAnchorElement,i:number) => {
                 if(elem.classList.contains('active')){
                     sum = i
                 }
@@ -45,7 +50,7 @@ const ScrollBar = ({callback}:any) => {
           callback(show)
     },[block])
 
-    const wheelHandler = (event:any) => {
+    const wheelHandler = (event:any):void => {
         const target = event.target
         const clName = "disable__global__wheel"
         thereIs = false
@@ -96,8 +101,8 @@ const ScrollBar = ({callback}:any) => {
       }
 
     return (
-        <div className="scrollbar-wrapper">
-            <div className="line"></div>
+        <div className={`scrollbar-wrapper ${propsShow ? styles.show : styles.hide}`}>
+            <div className={styles.line}></div>
             <li>
                 <NavLink to={'/home'} onClick={delayRedirect} activeClassName='active'>
                     <span>1</span><span className="o"></span><span>home</span>
@@ -125,6 +130,11 @@ const ScrollBar = ({callback}:any) => {
             </li>
         </div>
     );
+    }
+
+    type Props = {
+        callback:CallbackIsSHow,
+        propsShow:boolean
     }
 
 export default ScrollBar
