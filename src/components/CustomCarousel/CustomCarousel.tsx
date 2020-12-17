@@ -4,22 +4,35 @@ import Slider from "react-slick";
 import { useDispatch, useSelector } from "react-redux";
 import { photoLoader } from "../../redux/actions";
 import { Card } from '../Card/Card';
+import styles from './customCarousel.module.scss';
+import { useState } from 'react';
 
 
 export const CustomCarousel = () => {
+    let [slideShow,setSlideShow] = useState(3)
     const settings = {
         className: "center",
         centerMode: true,
         infinite: true,
         centerPadding: "0px",
-        slidesToShow: 3,
+        slidesToShow: slideShow,
         speed: 500,
       };
-      const st = {
-          width:'800px',
-          margin:'0 auto'
-      }
     const dispatch = useDispatch()
+    useEffect(() => {
+        if(window.innerWidth <=992){
+            setSlideShow(1)
+        }
+     },[]);
+    useEffect(() => {
+        window.addEventListener('resize',(e:any) => {
+            if(e.target.innerWidth <= 992){
+                setSlideShow(1)
+            }else{
+                setSlideShow(3)
+            }
+        })
+     },[]);
     useEffect(() => {
            fetch('https://jsonplaceholder.typicode.com/photos/?_limit=21')
            .then(response => response.json())
@@ -27,7 +40,7 @@ export const CustomCarousel = () => {
         },[])
         const images = useSelector((s:any) => s.app.images)
         return (
-            <div  style={st}>
+            <div  className={styles['slider-container']}>
                 <Slider {...settings}>
                     {images.map((elem:any) => {
                         

@@ -1,4 +1,8 @@
-
-.w{
-    width: 600px;
+@import '../../global.scss';
+.slider-container{
+    width:600px;
+    margin:0 auto;
+    @include media(3){
+        width: 240px;
+    }
 }
