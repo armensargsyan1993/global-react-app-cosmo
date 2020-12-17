@@ -13,7 +13,6 @@ import { Works } from "../Works/Works"
 import styles from './insideWrapper.module.scss'
 
 
-
 export const InsideWrapper:React.FC = () => {
     let [st, setSt] = useState(true)
     const show = useSelector((state:RootState) => state.app.show)
@@ -32,7 +31,7 @@ export const InsideWrapper:React.FC = () => {
                         </div>
                     </div>
                 </header>
-                <div className="d-flex">
+                <div className={styles.windowContainer}>
                     <aside className="aside">
                         <div className="nav">
                             <ScrollBar propsShow={show} callback={callbackIsShow}/>
@@ -50,7 +49,7 @@ export const InsideWrapper:React.FC = () => {
                             <Route  path='/hireUs' component={HireUs}/>
                         </Switch>
                     </main>
-                    </div>
+                </div>
             </div>
     )
 }

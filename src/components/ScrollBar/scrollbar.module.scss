@@ -1,6 +1,4 @@
-$bgClr:  #0c0c0c;
-$txtClr:#ffffff;
-$auxiliaryBgClr:#0f33ff;
+@import '../../global.scss';
 .show{
     visibility: visible;
     opacity: 1;
@@ -10,19 +8,21 @@ $auxiliaryBgClr:#0f33ff;
     visibility: hidden;
     opacity: 0;
 }
-
 .scrollbar-wrapper{
+    transition: all 1s ease;
     position: relative;
     left: -85px;
     width: 200px;
     height: 600px;
-    // background-color: rgb(31, 34, 33);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    li{
-      // background-color: grey;
+    .line{
+      position: absolute;
+      width: 5px;
+      height: 100%;
+      background-color: rgb(19, 18, 18);
     }
     span{
       display: block;
@@ -31,7 +31,7 @@ $auxiliaryBgClr:#0f33ff;
     span:nth-child(3){
       transform: translateX(10px);
     }
-  
+    
     a{
       display: flex;
       color: white;
@@ -48,7 +48,7 @@ $auxiliaryBgClr:#0f33ff;
       z-index: 2;
     }
     a.active{
-      color: $auxiliaryBgClr;
+      color: $auxiliaryBgClr ;
       span.o{
         background-color: $auxiliaryBgClr;
       }

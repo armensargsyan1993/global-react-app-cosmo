@@ -1,0 +1,41 @@
+$bgClr:  #0c0c0c;
+$txtClr:#ffffff;
+$auxiliaryBgClr:#0f33ff;
+
+
+@mixin media($abc) {
+    @if $abc == 0 {
+        @media only all and (min-width: 320px) and (max-width: 575px) { @content }
+    }
+    @if $abc == 1 {
+        @media only all and (min-width: 576px) { @content }
+    }
+    @if $abc == 2 {
+        @media only all and (min-width: 768px) { @content }
+    }
+    @if $abc == 3 {
+        @media only all and (min-width: 992px) { @content }
+    }
+    @if $abc == 4 {
+        @media only all and (min-width: 1200px) { @content }
+    }
+}
+
+
+
+$breakmin: 320px;
+$breakmax: 880;
+
+@mixin font-responsive($fmin, $fdiff, $breakmin, $breakdiff) {
+    font-size: calc( #{$fmin} + #{$fdiff} * ((100vw - #{$breakmin}) / #{$breakdiff}) );
+    @media(max-width: $breakmin) {
+        font-size: $fmin;
+    }
+    @media(min-width: round($breakmin + $breakmax)) {
+        font-size: round($fmin + $fdiff);
+    }
+}
+
+
+    
+    

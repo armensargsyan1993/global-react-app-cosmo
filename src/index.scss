@@ -1,9 +1,7 @@
 @import '~bootstrap/scss/bootstrap.scss';
 @import "~slick-carousel/slick/slick.css"; 
 @import "~slick-carousel/slick/slick-theme.css";
-$bgClr:  #0c0c0c;
-$txtClr:#ffffff;
-$auxiliaryBgClr:#0f33ff;
+@import './global.scss';
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -75,57 +73,4 @@ input:-webkit-autofill:active  {
 input:-webkit-autofill {
   -webkit-text-fill-color: $txtClr !important;
 }
-
-
-.scrollbar-wrapper{
-  transition: all 1s ease;
-  position: relative;
-  left: -85px;
-  width: 200px;
-  height: 600px;
-  // background-color: rgb(31, 34, 33);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  .line{
-    position: absolute;
-    width: 5px;
-    height: 100%;
-    background-color: rgb(19, 18, 18);
-  }
-  li{
-    // background-color: grey;
-  }
-  span{
-    display: block;
-    width: 20px;
-  }
-  span:nth-child(3){
-    transform: translateX(10px);
-  }
-
-  a{
-    display: flex;
-    color: white;
-    align-items: center;
-    text-decoration: none !important;
-    transition: all .5s ease;
-    font-weight: bold;
-  }
-  .o{
-    width: 5px;
-    height: 5px;
-    background-color: black;
-    position: relative;
-    z-index: 2;
-  }
-  a.active{
-    color: $auxiliaryBgClr;
-    span.o{
-      background-color: $auxiliaryBgClr;
-    }
-  }
-}
-
 

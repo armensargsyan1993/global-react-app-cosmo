@@ -19,7 +19,7 @@ export const Home:React.FC = () => {
     return (
         <section className={styles.home}>
             <div className="container">
-                <div className="row">
+                <div className="row flex-nowrap">
                     <div className={`col-6 ${styles.title}`}>
                         <h1>
                             Your next
@@ -28,8 +28,8 @@ export const Home:React.FC = () => {
                         </h1>
                         <Button className={styles.button}>hire us &#8594;<span></span></Button>
                     </div>
-                    <div className={`col-6 ${styles.cosmonaut}`}>
-                        <img src={cosmonaut} alt="cosmonaut" />
+                    <div className={`col-6 ${styles.cosmonautContainer}`}>
+                        <img className={styles.cosmonaut} src={cosmonaut} alt="cosmonaut" />
                     </div>
                 </div>
                 <div className={`row ${styles.cards}`}>

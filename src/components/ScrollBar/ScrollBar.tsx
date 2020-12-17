@@ -24,7 +24,8 @@ const ScrollBar:React.FC<Props> = ({callback,propsShow}) => {
 
 
     useEffect(() => {
-        navLinks = document.querySelectorAll('.scrollbar-wrapper a')
+        navLinks = document.querySelectorAll(`.${styles['scrollbar-wrapper']} a`)
+        
         navLinks.forEach((elem:HTMLAnchorElement,i:number) => {
             elem.dataset.scrollBarNumber = `${i}`
         })
@@ -47,6 +48,7 @@ const ScrollBar:React.FC<Props> = ({callback,propsShow}) => {
           if(block == 3){
             navLinks[currentPage].click()
           }
+          console.log(navLinks);
           callback(show)
     },[block])
 
@@ -101,30 +103,30 @@ const ScrollBar:React.FC<Props> = ({callback,propsShow}) => {
       }
 
     return (
-        <div className={`scrollbar-wrapper ${propsShow ? styles.show : styles.hide}`}>
+        <div className={`${styles['scrollbar-wrapper']} ${propsShow ? styles.show : styles.hide}`}>
             <div className={styles.line}></div>
             <li>
-                <NavLink to={'/home'} onClick={delayRedirect} activeClassName='active'>
+                <NavLink to={'/home'} onClick={delayRedirect} activeClassName={styles.active}>
                     <span>1</span><span className="o"></span><span>home</span>
                 </NavLink>
             </li>
             <li>
-                <NavLink to={'/works'} onClick={delayRedirect} activeClassName='active'>
+                <NavLink to={'/works'} onClick={delayRedirect} activeClassName={styles.active}>
                     <span>2</span><span className="o"></span><span>works</span>
                 </NavLink>
             </li>
             <li>
-                <NavLink to={'/about'} onClick={delayRedirect} activeClassName='active'>
+                <NavLink to={'/about'} onClick={delayRedirect} activeClassName={styles.active}>
                     <span>3</span><span className="o"></span><span>about</span>
                 </NavLink>
             </li>
             <li>
-                <NavLink to={'/contact'} onClick={delayRedirect} activeClassName='active'>
+                <NavLink to={'/contact'} onClick={delayRedirect} activeClassName={styles.active}>
                     <span>4</span><span className="o"></span><span>contact</span>
                 </NavLink>
             </li>
             <li>
-                <NavLink to={'/hireUs'} onClick={delayRedirect} activeClassName='active'>
+                <NavLink to={'/hireUs'} onClick={delayRedirect} activeClassName={styles.active}>
                     <span>5</span><span className="o"></span><span>hireUs</span>
                 </NavLink>
             </li>

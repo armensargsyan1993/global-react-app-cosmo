@@ -1,13 +1,18 @@
+
+
 .wrapper{
     height: 100vh;
     width: auto;
 }
-
-.div{
-    width: 70px;
-    height: 568px;
-    background-color: gray;
+.windowContainer{
+    display: flex;
+    height: auto;
 }
+// .div{
+//     width: 70px;
+//     height: 568px;
+//     background-color: gray;
+// }
 
 .header{
     padding: 21px 0;
@@ -16,6 +21,7 @@
 .main{
     width: 100%;
     transition: all .5s ease;
+    height: auto;
 }
 
 
