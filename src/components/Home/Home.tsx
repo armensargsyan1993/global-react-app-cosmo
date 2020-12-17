@@ -19,8 +19,8 @@ export const Home:React.FC = () => {
     return (
         <section className={styles.home}>
             <div className="container">
-                <div className="row flex-nowrap">
-                    <div className={`col-6 ${styles.title}`}>
+                <div className={`${styles.titleWrapper} row flex-nowrap`}>
+                    <div className={`col-md-6 col-sm-12 ${styles.title}`}>
                         <h1>
                             Your next
                             interactive

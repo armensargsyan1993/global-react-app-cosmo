@@ -48,7 +48,6 @@ const ScrollBar:React.FC<Props> = ({callback,propsShow}) => {
           if(block == 3){
             navLinks[currentPage].click()
           }
-          console.log(navLinks);
           callback(show)
     },[block])
 

@@ -1,8 +1,8 @@
 import React from "react"
-
+import styles from './logotype.module.scss'
 export const Logotype:React.FC = () => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg"
+        <svg className={styles.svg} xmlns="http://www.w3.org/2000/svg"
             xlinkHref="http://www.w3.org/1999/xlink"
             width="33px" height="32px"  viewBox="0 0 33 32"
         >

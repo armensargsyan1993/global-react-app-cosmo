@@ -8,21 +8,22 @@ $auxiliaryBgClr:#0f33ff;
         @media only all and (min-width: 320px) and (max-width: 575px) { @content }
     }
     @if $abc == 1 {
-        @media only all and (min-width: 576px) { @content }
+        @media only all and (max-width: 576px) { @content }
     }
     @if $abc == 2 {
-        @media only all and (min-width: 768px) { @content }
+        @media only all and (max-width: 768px) { @content }
     }
     @if $abc == 3 {
-        @media only all and (min-width: 992px) { @content }
+        @media only all and (max-width: 992px) { @content }
     }
     @if $abc == 4 {
-        @media only all and (min-width: 1200px) { @content }
+        @media only all and (max-width: 1200px) { @content }
     }
 }
 
 
-
+// $font-base-min: 14px;
+// $font-base-max: 6;
 $breakmin: 320px;
 $breakmax: 880;
 

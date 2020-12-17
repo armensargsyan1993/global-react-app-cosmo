@@ -6,33 +6,31 @@
   font-weight: 300;
 }
 
+.titleWrapper{
+  height: 100%;
+  border-bottom: 2px solid $auxiliaryBgClr;
+}
+
 .title{
-  position: relative;
   max-width: 433px;
-  max-height: 215px;
+  height: 300px;
   width: 100%;
-  left: 0;
-  top: 50px;
-  z-index: 100;
   h1{
-    // font-size: 82px;
     @include font-responsive(24px,58,321px,1200);
-    @include media(0){
-    };
-    line-height: 72px;
+    line-height: 100%;
     font-weight: 900;
     letter-spacing: 0.025rem;
+    text-align: center;
   }
 }
 
 .cards{
-  position: absolute;
-  bottom: 0;
-  border-top: 2px solid $auxiliaryBgClr;
+    display: flex;
+    flex-direction: column;
 }
 
 .button{
-  margin-top: 54px;
+  margin-top: 10%;
   background-color:transparent;
   border: none;
   color: $txtClr;
@@ -41,9 +39,8 @@
   line-height: 38px;
   font-weight: 700;
   letter-spacing: 0.05em;
-  width: 50px;
   white-space: nowrap;
-  margin-left: 50px;
+  margin-left: 10%;
   width: 100px;
   position: relative;
   z-index: 12;
@@ -62,36 +59,14 @@
   }
 }
 .cosmonautContainer{
-  // position: relative;
+  @include media(2){
+    display: none;   
+  }
 }
 .cosmonaut{
-  // position: absolute;
   width: 100%;
-  height: auto;
   max-width: 600px;
-  position: relative;
-  top: 50px;
+  @include media(2){
+    display: none;   
+  }
 }
-// @include media(largeDesktop){
-
-// }
-// @include media(smallDesktop){}
-// @include media(handhelds){}
-// @include media(handhelds-landscape){}
-// @include media(mobile){}
-// @include media(mobile-portrait){}
-// @include media(mobile-landscape){}
-// @include media(retina){}
-// @include media(iphone5){
-//   .title{
-//     max-width: 333px;
-//     max-height: 215px;
-//     left: 54px;
-//     top: 50px;
-//     h1{
-//       font-size: 22px;
-//       line-height: 22px;
-//       font-weight: 900;
-//     }
-//   }
-// }

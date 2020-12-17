@@ -1,8 +1,11 @@
+@import '../../global.scss';
 .card{
+    text-align: center;
     margin-top: 33px;
-    height: 130px;
+    max-height: 100px;
     overflow: hidden;
     opacity: .3;
+    min-width: 100%;
     &:hover {
         overflow-y: scroll;
         opacity: 1;
@@ -14,6 +17,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    
 }
 
 .text{
