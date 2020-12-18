@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/global-react-app-cosmo/static/css/main.4aa37327.chunk.css",
-    "main.js": "/global-react-app-cosmo/static/js/main.fd70e00e.chunk.js",
-    "main.js.map": "/global-react-app-cosmo/static/js/main.fd70e00e.chunk.js.map",
+    "main.css": "/global-react-app-cosmo/static/css/main.ea2cd14e.chunk.css",
+    "main.js": "/global-react-app-cosmo/static/js/main.d230a6ab.chunk.js",
+    "main.js.map": "/global-react-app-cosmo/static/js/main.d230a6ab.chunk.js.map",
     "runtime-main.js": "/global-react-app-cosmo/static/js/runtime-main.776995e1.js",
     "runtime-main.js.map": "/global-react-app-cosmo/static/js/runtime-main.776995e1.js.map",
     "static/css/2.3d60b2e6.chunk.css": "/global-react-app-cosmo/static/css/2.3d60b2e6.chunk.css",
-    "static/js/2.4e496d58.chunk.js": "/global-react-app-cosmo/static/js/2.4e496d58.chunk.js",
-    "static/js/2.4e496d58.chunk.js.map": "/global-react-app-cosmo/static/js/2.4e496d58.chunk.js.map",
+    "static/js/2.35e9a335.chunk.js": "/global-react-app-cosmo/static/js/2.35e9a335.chunk.js",
+    "static/js/2.35e9a335.chunk.js.map": "/global-react-app-cosmo/static/js/2.35e9a335.chunk.js.map",
     "index.html": "/global-react-app-cosmo/index.html",
     "static/css/2.3d60b2e6.chunk.css.map": "/global-react-app-cosmo/static/css/2.3d60b2e6.chunk.css.map",
-    "static/css/main.4aa37327.chunk.css.map": "/global-react-app-cosmo/static/css/main.4aa37327.chunk.css.map",
-    "static/js/2.4e496d58.chunk.js.LICENSE.txt": "/global-react-app-cosmo/static/js/2.4e496d58.chunk.js.LICENSE.txt",
+    "static/css/main.ea2cd14e.chunk.css.map": "/global-react-app-cosmo/static/css/main.ea2cd14e.chunk.css.map",
+    "static/js/2.35e9a335.chunk.js.LICENSE.txt": "/global-react-app-cosmo/static/js/2.35e9a335.chunk.js.LICENSE.txt",
     "static/media/cosmonaut.c125dc3a.png": "/global-react-app-cosmo/static/media/cosmonaut.c125dc3a.png",
     "static/media/shadowWoman.9d23394c.png": "/global-react-app-cosmo/static/media/shadowWoman.9d23394c.png",
     "static/media/index.scss": "/global-react-app-cosmo/static/media/slick.c94f7671.ttf"
@@ -19,8 +19,8 @@
   "entrypoints": [
     "static/js/runtime-main.776995e1.js",
     "static/css/2.3d60b2e6.chunk.css",
-    "static/js/2.4e496d58.chunk.js",
-    "static/css/main.4aa37327.chunk.css",
-    "static/js/main.fd70e00e.chunk.js"
+    "static/js/2.35e9a335.chunk.js",
+    "static/css/main.ea2cd14e.chunk.css",
+    "static/js/main.d230a6ab.chunk.js"
   ]
 }
