@@ -63,6 +63,7 @@
         }
     }
     label{
+        cursor: pointer;
         @include media(2){
             margin-left: 0 !important;
         }

@@ -30,7 +30,8 @@
 }
 
 .button{
-  margin-top: 10%;
+  display: block;
+  margin-top: 54px;
   background-color:transparent;
   border: none;
   color: $txtClr;
@@ -39,8 +40,9 @@
   line-height: 38px;
   font-weight: 700;
   letter-spacing: 0.05em;
+  width: 50px;
   white-space: nowrap;
-  margin-left: 10%;
+  margin-left: 50px;
   width: 100px;
   position: relative;
   z-index: 12;
@@ -49,13 +51,13 @@
     z-index: -1;
     position: absolute;
     top: 0;
-    right: 0;
+    right: -25px;
     display: block;
     width: 70%;
     height: 100%;
   }
   &:hover>span{
-      width: 100%;
+      right: -35px;
   }
 }
 .cosmonautContainer{

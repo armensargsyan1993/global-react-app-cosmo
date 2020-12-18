@@ -26,7 +26,7 @@ export const Home:React.FC = () => {
                             interactive
                             experience
                         </h1>
-                        <Button className={styles.button}>hire us &#8594;<span></span></Button>
+                        <Button className={styles.button}>hire us<span>&#8594;</span></Button>
                     </div>
                     <div className={`col-6 ${styles.cosmonautContainer}`}>
                         <img className={styles.cosmonaut} src={cosmonaut} alt="cosmonaut" />
