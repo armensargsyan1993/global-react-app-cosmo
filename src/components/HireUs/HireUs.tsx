@@ -27,7 +27,7 @@ export const HireUs = () => {
                 <h2>You want us to do</h2>
             </div>
             <div className={styles.form}>
-                <form onSubmit={handleSubmit(onSubmit)}>
+                <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
                     <div className={`row ${styles.row}`}>
                         <CheckBox errors={errors}  col={4} register={register} name={'isChecked'}>{names[0]}</CheckBox>
                         <CheckBox errors={errors}  col={4} register={register} name={'isChecked'}>{names[1]}</CheckBox>

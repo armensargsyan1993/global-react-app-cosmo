@@ -31,13 +31,11 @@ export const About = () => {
                         </h2>
                         <Button className={styles.button}>hire us <span>&#8594;</span></Button>
                     </div>
-                    <div className={styles.shadowWoman}>
+                    <div className={styles.shadowWomanWrapper}>
                         <img src={shadowWoman} alt="shadowWoman" />
                     </div>
                 </div>
-                <div className={styles.iconCardWrapper}>
                     <IconCardCreator iconCardWrapperClassName={styles.iconCardWrapperClassName} arr={cards} className={styles.iconCard} wrapperClassName={styles.iconCards}/>
-                </div>
             </div>
         </section>
     )

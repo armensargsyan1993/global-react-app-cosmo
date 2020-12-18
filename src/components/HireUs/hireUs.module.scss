@@ -49,3 +49,27 @@
 .sended{
     
 }
+
+.form{
+    @include media(2){
+        width: 300px;
+        
+    }
+    div{
+        @include media(2){
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
+    }
+    label{
+        @include media(2){
+            margin-left: 0 !important;
+        }
+    }
+    input{
+        @include media(2){
+            // width: auto;
+        }
+    }
+}
