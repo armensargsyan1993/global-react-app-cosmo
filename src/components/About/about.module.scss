@@ -2,7 +2,11 @@
 .about{
   font-weight: 300;
 }
-
+.titleWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .title{
   position: relative;
   max-width: 433px;
@@ -10,11 +14,13 @@
   left: 154px;
   top: 50px;
   h2{
-    font-size: 82px;
-    line-height: 72px;
+    line-height: 100%;
     font-weight: 900;
     letter-spacing: 0.025rem;
+    @include font-responsive(24px,58,321px,1200);
   }
+}
+.iconCardWrapper{
 }
 
 .iconCard{
@@ -50,17 +56,21 @@
   width: 220px;
   height: 120px;
   margin: 0 10px;
+  
 }
 .iconCards{
     transition: all .5s ease;
     width: 300px;
     display: flex;
-    position: relative;
     left: 154px;
     top: -40px;
+    @include media(3){
+      flex-direction: column;
+    }
 }
 
 .button{
+  display: block;
   margin-top: 54px;
   background-color:transparent;
   border: none;

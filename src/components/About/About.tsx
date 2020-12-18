@@ -24,18 +24,20 @@ export const About = () => {
     return (
         <section className={styles.about}>
             <div className="container">
-                <div className="row">
-                    <div className={`col-6 ${styles.title}`}>
+                <div className={`${styles.titleWrapper}`}>
+                    <div className={`${styles.title}`}>
                         <h2>
                             We believe in passionate people
                         </h2>
                         <Button className={styles.button}>hire us <span>&#8594;</span></Button>
                     </div>
-                    <div className={`col-6 ${styles.cosmonaut}`}>
+                    <div className={styles.shadowWoman}>
                         <img src={shadowWoman} alt="shadowWoman" />
                     </div>
                 </div>
-                <IconCardCreator iconCardWrapperClassName={styles.iconCardWrapperClassName} arr={cards} className={styles.iconCard} wrapperClassName={styles.iconCards}/>
+                <div className={styles.iconCardWrapper}>
+                    <IconCardCreator iconCardWrapperClassName={styles.iconCardWrapperClassName} arr={cards} className={styles.iconCard} wrapperClassName={styles.iconCards}/>
+                </div>
             </div>
         </section>
     )
