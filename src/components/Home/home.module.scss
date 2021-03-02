@@ -12,6 +12,9 @@
 }
 
 .title{
+  @include media(2){
+    height: auto;
+  }
   max-width: 433px;
   height: 300px;
   width: 100%;
