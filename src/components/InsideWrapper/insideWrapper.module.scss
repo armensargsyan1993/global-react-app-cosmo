@@ -1,4 +1,4 @@
-
+@import '../../global.scss';
 
 .wrapper{
     height: 100vh;
@@ -7,13 +7,10 @@
 .windowContainer{
     display: flex;
     height: 85%;
+    @include media(2){
+        display: block;
+    }
 }
-// .div{
-//     width: 70px;
-//     height: 568px;
-//     background-color: gray;
-// }
-
 .header{
     padding: 21px 0;
 }
